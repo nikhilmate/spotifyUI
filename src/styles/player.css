@@ -291,6 +291,7 @@
 
     .songplayer-align {
         min-width: 0;
+        padding-top: 1.8rem;
     }
 
     .player-img-wrap {

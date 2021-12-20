@@ -182,9 +182,8 @@
     .playlist-wrap {
       width: 100%;
     }
-    
-    .song-desc {
-        width: auto;
-        max-width: 100%;
+
+    .playlist-title {
+        padding-top: 1.6rem;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import AppContext from '../../store/AppContext'
 import AudioControls from './AudioControls'
 import music from '../../../images/music.jpg'
