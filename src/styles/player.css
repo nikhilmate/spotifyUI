@@ -115,7 +115,9 @@
     border-radius: 2px;
 }
 
-
+.player-sound .mute-sound {
+    background-color: tomato;
+}
 
 
 /* progress bar */

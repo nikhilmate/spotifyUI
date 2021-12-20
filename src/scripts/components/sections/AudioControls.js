@@ -10,6 +10,8 @@ const AudioControls = () => {
     const [trackProgress, setTrackProgress] = useState(0)
     const [isPlaying, setIsPlaying] = useState(false)
 
+    const [ isMuted, setMuted ] = useState(false)
+
     const intervalRef = useRef()
     const isReady = useRef(true)
     const audio = new Audio(getProperty(currentSong, 'url'))
@@ -101,6 +103,10 @@ const AudioControls = () => {
     }, [currentSong])
 
     useEffect(() => {
+        audioRef.current.muted = isMuted
+    }, [isMuted])
+
+    useEffect(() => {
         return () => {
             audioRef.current.pause()
             clearInterval(intervalRef.current)
@@ -143,9 +149,9 @@ const AudioControls = () => {
                     </button>
                 </div>
                 <div className="player-sound">
-                    <span className="med-icon">
+                    <button onClick={() => setMuted(!isMuted)} className={`med-icon ${isMuted ? 'mute-sound': ''}`}>
                         <PlayerSound />
-                    </span>
+                    </button>
                 </div>
             </div>
         </div>
