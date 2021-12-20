@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { MenuToggle } from '../../utils/icons.utils'
 import { useLocation } from 'react-router'
 import AppContext from '../../store/AppContext'
-import { ACTION, notEmptyArray } from '../../utils/dom.utils'
+import { ACTION, notEmptyArray, ROUTE } from '../../utils/dom.utils'
 
 
 const Sidebar = () => {
@@ -24,7 +24,7 @@ const Sidebar = () => {
     }, [])
 
     useEffect(() => {
-        let path = location.pathname.replace('/', '')
+        let path = location.pathname.match(/([^\/]*)\/*$/)[1]
         if (notEmptyArray(AppData.playlists)) {
             let tempath = path.trim()
             let currItem = AppData.playlists.filter(item => item.id == tempath)
@@ -57,7 +57,7 @@ const Sidebar = () => {
                         AppData.playlists instanceof Array &&
                         AppData.playlists.map((navItem, indx) => 
                             <li key={indx + 1}>
-                                <Link className={AppData.route === navItem.id ? 'nav-active' : ''} to={`/${ navItem.id }`}>{ navItem.title }</Link>
+                                <Link className={AppData.route === navItem.id ? 'nav-active' : ''} to={`${ROUTE}/${ navItem.id }`}>{ navItem.title }</Link>
                             </li>
                         )   
                     }

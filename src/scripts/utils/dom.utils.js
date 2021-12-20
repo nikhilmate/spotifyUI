@@ -57,3 +57,5 @@ export const getProperty = (obj, prop, def = null) => {
     let val = obj && typeof obj === 'object' ? obj[prop] : def
     return val
 }
+
+export const ROUTE = `spotifyUI`
