@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spotifyUI/static/css/main.e90beaee.css",
-    "main.js": "/spotifyUI/static/js/main.3f3f1f04.js",
+    "main.css": "/spotifyUI/static/css/main.3120127c.css",
+    "main.js": "/spotifyUI/static/js/main.6e0440fd.js",
     "static/js/787.eba3908e.chunk.js": "/spotifyUI/static/js/787.eba3908e.chunk.js",
     "static/media/BasierCircle-Bold.woff": "/spotifyUI/static/media/BasierCircle-Bold.9c1bc4fd5b0e17dd67f6.woff",
     "static/media/BasierCircle-Regular.woff": "/spotifyUI/static/media/BasierCircle-Regular.8ce91e3cb869c7474b74.woff",
@@ -10,12 +10,12 @@
     "index.html": "/spotifyUI/index.html",
     "static/media/searchicon.svg": "/spotifyUI/static/media/searchicon.b6925b4cfe84b5eea52c4404dd585dae.svg",
     "static/media/dummyImg.svg": "/spotifyUI/static/media/dummyImg.8eb59fdfd4adb64a58b0c6eb91452843.svg",
-    "main.e90beaee.css.map": "/spotifyUI/static/css/main.e90beaee.css.map",
-    "main.3f3f1f04.js.map": "/spotifyUI/static/js/main.3f3f1f04.js.map",
+    "main.3120127c.css.map": "/spotifyUI/static/css/main.3120127c.css.map",
+    "main.6e0440fd.js.map": "/spotifyUI/static/js/main.6e0440fd.js.map",
     "787.eba3908e.chunk.js.map": "/spotifyUI/static/js/787.eba3908e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e90beaee.css",
-    "static/js/main.3f3f1f04.js"
+    "static/css/main.3120127c.css",
+    "static/js/main.6e0440fd.js"
   ]
 }
