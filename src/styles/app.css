@@ -1,0 +1,193 @@
+:root {
+  --main-font: 'Basier Circle', Arial, Helvetica, sans-serif;
+  --nav-transit: all .3s ease; 
+}
+
+html {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  box-shadow: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.comn-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.comn-input-form {
+  border: none;
+  background-color: none;
+  cursor: text;
+  appearance: none;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  overflow-x: hidden;
+  background-color: #201606;
+  color: #FFF;
+}
+
+.main__app {
+  height: 100vh;
+  background-color: #201606;
+  background-image: linear-gradient(108.18deg, #201606 2.46%, #000000 99.84%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.dl-blk {
+  display: block;
+}
+
+.main-body,
+.app-body {
+  flex: 1 0 auto;
+  display: flex;
+  height: 100%;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border-radius: 2px;
+}
+
+.comn-title {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #FFFFFF;
+  line-height: 1.12;
+}
+
+.comn-desc {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.comn-toggle {
+  pointer-events: none;
+  display: none;   
+}
+
+@media screen and (min-width: 1440px) and (min-height: 768px) {
+  html {
+    font-size: 74%;
+  }
+}
+
+@media screen and (min-width: 1800px) and (min-height: 960px) {
+  html {
+    font-size: 84%;
+  }
+}
+
+@media screen and (min-width: 2100px) and (min-height: 1100px) {
+  html {
+    font-size: 94%;
+  }
+}
+
+@media screen and (min-width: 2320px) and (min-height: 1440px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 56%;
+  }
+  .app-body {
+      padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-body {
+    transition: ease all 420ms;
+    overflow: visible;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .main-body {
+    width: 100%;
+  }
+
+  .app-body.should-slide {
+    transform: translateX(-100%);
+  }
+  .comn-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 3.2rem 1.8rem 0 0;
+      width: 30px;
+      height: 30px;   
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      z-index: 1;
+      pointer-events: initial;
+      transition: var(--nav-transit);
+  }
+
+  .comn-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+}

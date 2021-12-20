@@ -1,0 +1,113 @@
+.app-navigation {
+    position: relative;
+    max-width: 260px;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.header__navigation {
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.brand-logo img {
+    width: auto;
+    height: 3.6rem;
+    display: block;
+}
+
+.nav__menu {
+    padding: 0 2.8rem;
+}
+
+.navmenu-list {
+    list-style: none;
+    display: block;
+}
+
+.navmenu-list li {
+    display: block;
+    margin-bottom: 2.2rem;
+}
+
+.navmenu-list li a {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    transition: var(--nav-transit);
+}
+
+.navmenu-list li a:hover,
+.navmenu-list li a.nav-active {
+    color: #FFF;
+}
+
+
+
+@media screen and (min-width: 1440px) and (min-height: 768px) {
+    .app-navigation {
+      max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1800px) and (min-height: 960px) {
+    .app-navigation {
+      max-width: 360px;
+    }
+}
+
+@media screen and (min-width: 2100px) and (min-height: 1100px) {
+    
+    .app-navigation {
+        max-width: 420px;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .app-navigation {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        max-width: 100%;
+        z-index: 10;
+    }
+    
+    .nav__menu {
+        position: fixed;
+        background-color: #000;
+        box-shadow: 0 0 22px -6px rgb(0 0 0);
+        left: 2.2rem;
+        padding: 0 3.4rem;
+        bottom: 100%;
+    }
+
+    .nav__menu.visible {
+        bottom: auto;
+    }
+
+    .navmenu-list {
+        padding-top: 2.2rem;
+    }
+
+    .toggle-btn {
+        display: block;
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-right: 2rem;
+    }
+
+    .toggle-btn svg {
+        width: 100%;
+        height: auto;
+    }
+}

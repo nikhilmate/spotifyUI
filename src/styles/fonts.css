@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Basier Circle";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Basier Circle Regular"),
+        url("../fonts/BasierCircle-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Basier Circle";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Basier Circle Bold"),
+        url("../fonts/BasierCircle-Bold.woff") format("woff");
+}
