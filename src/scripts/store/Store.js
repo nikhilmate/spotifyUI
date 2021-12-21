@@ -22,7 +22,6 @@ class AppProvider extends Component {
     }
 
     render() {
-        console.log(this.state)
         let contextValue = {
             AppData: this.state,
             contextReducer: (params) => this.contextReducer(params)
