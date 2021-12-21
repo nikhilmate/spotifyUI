@@ -69,11 +69,14 @@ body {
 .main__app {
   height: 100vh;
   background-color: #201606;
-  background-image: linear-gradient(108.18deg, #201606 2.46%, #000000 99.84%);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   overflow: hidden;
+}
+
+.main__app {
+  transition: background-color .3s ease;
 }
 
 .dl-blk {

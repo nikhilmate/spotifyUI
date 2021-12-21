@@ -46,17 +46,19 @@ const setStateInContext = (state, payload) => {
                 let { playlists } = payload;
                 let templist = playlists.length > 0 ? playlists : [];
                 return { ...state, playlists: templist };
-
             
             case ACTION.setCurrentSong:
                 let { song } = payload;
                 let tempSong = song ? song : null;
                 return { ...state, currentSong: tempSong };
             
-            
             case ACTION.shouldSlide:
                 let { flag } = payload;
                 return { ...state, shouldSlide: !!flag };
+            
+            case ACTION.setBgcolor:
+                let { color } = payload;
+                return { ...state, bgColor: color };
             
             default:
                 return state;

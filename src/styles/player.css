@@ -34,7 +34,7 @@
 .player-img-wrap {
     width: 100%;
     margin: 3.4rem 0 2.2rem;
-    min-height: 36rem;
+    /* min-height: 36rem; */
     max-height: 36rem;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.08);
